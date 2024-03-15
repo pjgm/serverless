@@ -81,10 +81,10 @@ jobs:
         run: |
           TEMP_ARRAY=($(echo $GITHUB_REF | tr "/" "\n"))
           TAG=${TEMP_ARRAY[@]: -1}
-          npx github-release-from-cc-changelog 4.0.0
+          npx github-release-from-cc-changelog v4.0.0
 
       - name: Publish standalone artifacts
         run: |
           TEMP_ARRAY=($(echo $GITHUB_REF | tr "/" "\n"))
           TAG=${TEMP_ARRAY[@]: -1}
-          npm run pkg:upload -- 4.0.0
+          npm run pkg:upload -- v4.0.0
