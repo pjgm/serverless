@@ -5,7 +5,7 @@
   "preferGlobal": true,
   "homepage": "https://serverless.com/framework/docs/",
   "author": "serverless.com",
-  "repository": "serverless/serverless",
+  "repository": "pjgm/serverless",
   "keywords": [
     "serverless",
     "lambda",
